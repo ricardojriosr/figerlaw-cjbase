@@ -23,6 +23,9 @@ require_once( __DIR__ . '/inc/enqueue-scripts.php');
 # HELPER FUNCTIONS
 require_once( __DIR__ . '/inc/helpers.php');
 
+# NAVWALKER
+require_once(__DIR__ . '/inc/wp-bootstrap-mega-navwalker.php');
+
 # REGISTER SLIDERS
 register_new_royalslider_files(2);
 register_new_royalslider_files(3);

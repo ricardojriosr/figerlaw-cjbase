@@ -203,7 +203,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Register Custom Navigation Walker
  */
 function register_navwalker(){
-	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+	require_once get_template_directory() . '/inc/class-wp-bootstrap-mega-navwalker.php';
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
 
@@ -312,3 +312,26 @@ function my_acf_init_block_types() {
 
 // register sliders
 register_new_royalslider_files(2);
+
+
+//register MegaMenu widget if the Mega Menu is set as the menu location
+$location = 'mega_menu';
+$css_class = 'mega-menu-parent';
+$locations = get_nav_menu_locations();
+if ( isset( $locations[ $location ] ) ) {
+  $menu = get_term( $locations[ $location ], 'nav_menu' );
+  if ( $items = wp_get_nav_menu_items( $menu->name ) ) {
+    foreach ( $items as $item ) {
+      if ( in_array( $css_class, $item->classes ) ) {
+        register_sidebar( array(
+          'id'   => 'mega-menu-item-' . $item->ID,
+          'description' => 'Mega Menu items',
+          'name' => $item->title . ' - Mega Menu',
+          'before_widget' => '<li id="%1$s" class="mega-menu-item">',
+          'after_widget' => '</li>', 
+
+        ));
+      }
+    }
+  }
+}

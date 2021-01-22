@@ -46,14 +46,10 @@
 
 		        <?php
 		        wp_nav_menu( array(
-		            'theme_location'    => 'primary',
-		            'depth'             => 2,
-		            'container'         => 'div',
-		            'container_class'   => 'collapse navbar-collapse justify-content-center',
-		            'container_id'      => 'mobile-menu-custom',
-		            'menu_class'        => 'nav navbar-nav',
-		            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-		            'walker'            => new WP_Bootstrap_Navwalker(),
+		            'theme_location' => 'mega_menu',
+					'depth' => 0,
+					'menu_class'  => 'navbar-nav mr-auto',
+					'walker'  => new WP_Bootstrap_Mega_Navwalker(),
 		        ) );
 
 

@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/wp-content/themes/cj-base/inc/fonts/icomoon.eot?y82uqb');
+  src:  url('/wp-content/themes/cj-base/inc/fonts/icomoon.eot?y82uqb#iefix') format('embedded-opentype'),
+    url('/wp-content/themes/cj-base/inc/fonts/icomoon.ttf?y82uqb') format('truetype'),
+    url('/wp-content/themes/cj-base/inc/fonts/icomoon.woff?y82uqb') format('woff'),
+    url('/wp-content/themes/cj-base/inc/fonts/icomoon.svg?y82uqb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-handshake-o:before {
+  content: "\e900";
+}
+.icon-group:before {
+  content: "\e901";
+}
+.icon-office:before {
+  content: "\e903";
+}
+.icon-film:before {
+  content: "\e913";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-map:before {
+  content: "\e94b";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-bubbles4:before {
+  content: "\e970";
+}
+.icon-users:before {
+  content: "\e972";
+}
+.icon-quotes-left:before {
+  content: "\e977";
+}
+.icon-quotes-right:before {
+  content: "\e978";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-trophy:before {
+  content: "\e99e";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
